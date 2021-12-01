@@ -2,6 +2,7 @@ from flask import Flask, request, redirect, render_template
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def main():
     if request.method == 'GET':
@@ -28,7 +29,7 @@ def message():
        print("We received POST")
        print(request.form)
        return redirect("/")
-message
-main
-kontakt
-o_mnie
+
+
+if __name__=='__main__':
+    app.run(debug=True)
