@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KONTAKT</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+</head>
+<body>
+<h1>Witaj na mojej stronie domowej</h1>
+<img src="https://miro.medium.com/fit/c/1360/1360/0*2sK4kWAg0isBrzVq.jpg"
+      style="width:180px;height:180px;">
+
+<h2>Kontakt</h2>
+<ul>
+<li> email:superprogramist@gmail.com</li>
+<li> telefon:1234567</li>
+</ul>
+<form action="" methods="POST">
+            <textarea id="me" name="me" rows="4" cols="50">
+            </textarea>
+            <input type="submit"/>
+</form>
+
+</body>
+</html>
